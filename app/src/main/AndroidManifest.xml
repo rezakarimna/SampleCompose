@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
+            android:name=".StateReComposition10Activity"
+            android:exported="true"
+            android:theme="@style/Theme.SampleCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".CalculatorActivity"
             android:exported="false"
             android:label="@string/title_activity_calculator"
@@ -21,11 +31,6 @@
             android:exported="true"
             android:label="@string/title_activity_dice_roller"
             android:theme="@style/Theme.SampleCompose">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".PracticeComposeActivity"
@@ -36,7 +41,11 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SampleCompose"></activity>
+            android:theme="@style/Theme.SampleCompose" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

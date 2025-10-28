@@ -17,8 +17,10 @@
     <string name="title_activity_dice_roller">DiceRollerActivity</string>
     <string name="roll">Roll</string>
     <string name="title_activity_calculator">CalculatorActivity</string>
-        <string name="calculate_tip">Calculate Tip</string>
-        <string name="bill_amount">Bill Amount</string>
-        <string name="tip_amount">Tip Amount: %s</string>
+    <string name="calculate_tip">Calculate Tip</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="tip_amount">Tip Amount: %s</string>
+    <string name="title_activity_button_types08">ButtonTypes08Activity</string>
+    <string name="reza_karimnia">reza karimnia</string>
 
 </resources>
