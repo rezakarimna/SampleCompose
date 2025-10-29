@@ -10,7 +10,8 @@ activityCompose = "1.8.2"
 composeBom = "2024.09.00"
 appcompat = "1.7.1"
 material = "1.13.0"
-activity = "1.8.2"   # ✅ تغییر داده شد
+activity = "1.8.2"
+arcore = "1.0.0-alpha06"   # ✅ تغییر داده شد
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +31,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-arcore = { group = "androidx.xr.arcore", name = "arcore", version.ref = "arcore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
