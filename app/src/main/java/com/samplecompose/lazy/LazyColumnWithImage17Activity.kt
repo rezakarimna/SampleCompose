@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -15,6 +16,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -31,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.samplecompose.R
 import com.samplecompose.ui.theme.SampleComposeTheme
+import kotlin.random.Random
 
 class LazyColumnWithImage17Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,7 +73,8 @@ class LazyColumnWithImage17Activity : ComponentActivity() {
                         "Tomato sos, cheese, oregano, corn, jalapeno, chicken"
                     )
 
-                    MyApp(imageId, names, ingredients)
+                    //  MyApp(imageId, names, ingredients)
+                    LazyGridFullGuide18()
                 }
             }
         }
@@ -130,10 +135,48 @@ private fun ColumnItem(
     }
 }
 
+@Composable
+private fun LazyGridFullGuide18(modifier: Modifier = Modifier) {
+    // GridCells.Adaptive(40.dp) براي زماني كه ميخوام حداقل سايز به هر ايتم بديم
+    LazyVerticalGrid(
+        columns = GridCells.Fixed(3),
+        contentPadding = PaddingValues(10.dp)
+    ) {
+        items(200) {
+            MyCard(it, modifier)
+        }
+    }
+}
+
+@Composable
+private fun MyCard(item: Int, modifier: Modifier) {
+    Card(
+        modifier
+            .size(100.dp)
+            .padding(6.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = Color(
+                Random.nextFloat(),
+                Random.nextFloat(),
+                Random.nextFloat(),
+                1F
+            )
+        ),
+        elevation = CardDefaults.cardElevation(8.dp)
+    ) {
+        Box(
+            modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(text = item.toString(), fontSize = 22.sp)
+        }
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview2() {
     SampleComposeTheme {
-
+        LazyGridFullGuide18()
     }
 }
