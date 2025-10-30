@@ -23,5 +23,6 @@
     <string name="title_activity_button_types08">ButtonTypes08Activity</string>
     <string name="reza_karimnia">reza karimnia</string>
     <string name="title_activity_lazy_row_and_column16">LazyRowAndColumn16Activity</string>
+    <string name="title_activity_lazy_column_with_image17">LazyColumnWithImage17Activity</string>
 
 </resources>

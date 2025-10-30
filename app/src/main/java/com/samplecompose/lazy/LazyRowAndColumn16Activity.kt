@@ -27,6 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.samplecompose.ui.theme.SampleComposeTheme
+import com.samplecompose.ui.theme.dark_secondary
 
 class LazyRowAndColumn16Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,7 +118,9 @@ fun RowItem(modifier: Modifier = Modifier, item: String) {
                 .fillMaxSize(),
             contentAlignment = Alignment.Center
         ) {
-            Text(text = item, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+            Text(text = item, fontSize = 15.sp, fontWeight = FontWeight.Bold,
+                color = dark_secondary
+            )
         }
     }
 }
