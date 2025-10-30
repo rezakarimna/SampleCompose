@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -30,6 +31,8 @@ import androidx.compose.material.icons.outlined.Done
 import androidx.compose.material.icons.outlined.Email
 import androidx.compose.material.icons.outlined.Send
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
@@ -60,6 +63,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -262,7 +266,8 @@ fun Image14Jetpack() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.persepolis) ,
+        Image(
+            painter = painterResource(id = R.drawable.persepolis),
             contentDescription = "pic",
             Modifier
                 .padding(10.dp)
@@ -275,7 +280,8 @@ fun Image14Jetpack() {
             contentScale = ContentScale.FillWidth,
             //alpha = .2f
         )
-        Image(painter = painterResource(id = R.drawable.persepolis) ,
+        Image(
+            painter = painterResource(id = R.drawable.persepolis),
             contentDescription = "pic",
             Modifier
                 .padding(10.dp)
@@ -288,7 +294,8 @@ fun Image14Jetpack() {
             contentScale = ContentScale.FillWidth,
             //alpha = .2f
         )
-        Image(painter = painterResource(id = R.drawable.persepolis) ,
+        Image(
+            painter = painterResource(id = R.drawable.persepolis),
             contentDescription = "pic",
             Modifier
                 .padding(10.dp)
@@ -302,10 +309,46 @@ fun Image14Jetpack() {
     }
 }
 
+@Composable
+fun Card15Jetpack() {
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+
+        Card(
+            modifier = Modifier
+                .width(200.dp)
+                .height(270.dp),
+            elevation = CardDefaults.cardElevation(10.dp),
+            /*  border = BorderStroke(1.dp,Color.Black),
+              shape = CutCornerShape(10.dp),*/
+            colors = CardDefaults.cardColors(Color.White)
+        )
+        {
+            Column(modifier = Modifier.fillMaxSize()) {
+                Image(painter = painterResource(R.drawable.persepolis), "")
+                Text(
+                    text = "Title",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(10.dp)
+                )
+                Text(
+                    text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make ",
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Light,
+                    modifier = Modifier.padding(10.dp),
+                    color = Color.Gray,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis
+                )
+            }
+        }
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun ButtonTypesPreview() {
     SampleComposeTheme {
-        Image14Jetpack()
+        Card15Jetpack()
     }
 }
