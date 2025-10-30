@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
-            android:name=".StateReComposition10Activity"
+            android:name=".lazy.LazyRowAndColumn16Activity"
             android:exported="true"
+            android:label="@string/title_activity_lazy_row_and_column16"
             android:theme="@style/Theme.SampleCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StateReComposition10Activity"
+            android:exported="true"
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".CalculatorActivity"
             android:exported="false"
@@ -30,8 +35,7 @@
             android:name=".DiceRollerActivity"
             android:exported="true"
             android:label="@string/title_activity_dice_roller"
-            android:theme="@style/Theme.SampleCompose">
-        </activity>
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".PracticeComposeActivity"
             android:exported="true"
