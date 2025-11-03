@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
+            android:name=".navigation.BottomNavigationBar20Activity"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation_bar20"
+            android:theme="@style/Theme.SampleCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".lazy.LazyColumnWithImage17Activity"
             android:exported="true"
             android:label="@string/title_activity_lazy_column_with_image17"

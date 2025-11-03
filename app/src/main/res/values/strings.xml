@@ -24,5 +24,6 @@
     <string name="reza_karimnia">reza karimnia</string>
     <string name="title_activity_lazy_row_and_column16">LazyRowAndColumn16Activity</string>
     <string name="title_activity_lazy_column_with_image17">LazyColumnWithImage17Activity</string>
+    <string name="title_activity_bottom_navigation_bar20">BottomNavigationBar20Activity</string>
 
 </resources>
