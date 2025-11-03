@@ -27,5 +27,6 @@
     <string name="title_activity_bottom_navigation_bar20">BottomNavigationBar20Activity</string>
     <string name="title_activity_top_appn_bar21">TopAppnBar21Activity</string>
     <string name="title_activity_top_app_bar21">TopAppBar21Activity</string>
+    <string name="title_activity_navigation_compose23">NavigationCompose23Activity</string>
 
 </resources>
