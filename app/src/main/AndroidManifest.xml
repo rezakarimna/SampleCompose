@@ -12,46 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
-            android:name=".navigation.BottomNavigationBar20Activity"
+            android:name=".TopAppBar21Activity"
             android:exported="true"
-            android:label="@string/title_activity_bottom_navigation_bar20"
-            android:theme="@style/Theme.SampleCompose">
+            android:label="@string/title_activity_top_app_bar21">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".BottomNavigationBar20Activity"
+            android:exported="true"
+            android:label="@string/title_activity_bottom_navigation_bar20" />
         <activity
             android:name=".lazy.LazyColumnWithImage17Activity"
             android:exported="true"
             android:label="@string/title_activity_lazy_column_with_image17"
-            android:theme="@style/Theme.SampleCompose">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".lazy.LazyRowAndColumn16Activity"
             android:exported="true"
             android:label="@string/title_activity_lazy_row_and_column16"
-            android:theme="@style/Theme.SampleCompose">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".StateReComposition10Activity"
             android:exported="true"
-            android:theme="@style/Theme.SampleCompose" />
-        <activity
-            android:name=".CalculatorActivity"
-            android:exported="false"
-            android:label="@string/title_activity_calculator"
             android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".DiceRollerActivity"

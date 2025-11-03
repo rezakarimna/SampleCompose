@@ -25,5 +25,7 @@
     <string name="title_activity_lazy_row_and_column16">LazyRowAndColumn16Activity</string>
     <string name="title_activity_lazy_column_with_image17">LazyColumnWithImage17Activity</string>
     <string name="title_activity_bottom_navigation_bar20">BottomNavigationBar20Activity</string>
+    <string name="title_activity_top_appn_bar21">TopAppnBar21Activity</string>
+    <string name="title_activity_top_app_bar21">TopAppBar21Activity</string>
 
 </resources>
