@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
+            android:name=".nested_navigation.NestedNavigation25Activity"
+            android:exported="true"
+            android:label="@string/title_activity_nested_navigation25"
+            android:theme="@style/Theme.SampleCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".navigation.NavigationWithArguments24Activity"
             android:exported="true"
             android:label="@string/title_activity_navigation_with_arguments24"

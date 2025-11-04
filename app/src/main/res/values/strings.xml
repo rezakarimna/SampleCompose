@@ -30,5 +30,6 @@
     <string name="title_activity_navigation_compose23">NavigationCompose23Activity</string>
     <string name="title_activity_navigation_with_arguments24">NavigationWithArguments24Activity
     </string>
+    <string name="title_activity_nested_navigation25">NestedNavigation25Activity</string>
 
 </resources>
