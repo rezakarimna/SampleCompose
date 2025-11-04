@@ -4,15 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.samplecompose.ui.theme.SampleComposeTheme
 
-
-class NavigationCompose23Activity : ComponentActivity() {
+class NavigationWithArguments24Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,12 +24,13 @@ class NavigationCompose23Activity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting1(name: String, modifier: Modifier = Modifier) {
+fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview1() {
-
+fun GreetingPreview() {
+    SampleComposeTheme {
+    }
 }

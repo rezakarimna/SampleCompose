@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
-            android:name=".navigation.NavigationCompose23Activity"
+            android:name=".navigation.NavigationWithArguments24Activity"
             android:exported="true"
-            android:label="@string/title_activity_navigation_compose23"
+            android:label="@string/title_activity_navigation_with_arguments24"
             android:theme="@style/Theme.SampleCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".navigation.NavigationCompose23Activity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_compose23"
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".TopAppBar21Activity"
             android:exported="true"
