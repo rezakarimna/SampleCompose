@@ -6,7 +6,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.samplecompose.ui.theme.Typography
+
 
 @Composable
 fun Nav(navController: NavHostController) {

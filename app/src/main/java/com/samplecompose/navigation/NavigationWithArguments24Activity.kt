@@ -24,7 +24,7 @@ class NavigationWithArguments24Activity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting() {
 
 }
 
