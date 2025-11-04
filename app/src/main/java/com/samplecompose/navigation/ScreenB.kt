@@ -16,22 +16,20 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
 @Composable
-fun ScreenA(navController: NavHostController) {
+fun ScreenB(navController: NavHostController) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-
-        Text(text = "Screen A", fontSize = 64.sp, fontWeight = FontWeight.Bold)
-
+        Text(text = "Screen B", fontSize = 64.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(45.dp))
-
-        Button(onClick = {
-            navController.navigate("B")
-        })
-        {
-            Text(text = "Go to Screen B", fontSize = 20.sp)
+        Button(onClick = { navController.navigate("C") }) {
+            Text(text = "Go to Screen C", fontSize = 20.sp)
+        }
+        Spacer(Modifier.height(45.dp))
+        Button(onClick = { navController.navigate("A") }) {
+            Text(text = "Go to Screen A", fontSize = 20.sp)
         }
     }
 }
