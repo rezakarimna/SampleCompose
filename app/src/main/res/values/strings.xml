@@ -31,5 +31,6 @@
     <string name="title_activity_navigation_with_arguments24">NavigationWithArguments24Activity
     </string>
     <string name="title_activity_nested_navigation25">NestedNavigation25Activity</string>
+    <string name="title_activity_item_click_lazy_column26">ItemClickLazyColumn26Activity</string>
 
 </resources>
