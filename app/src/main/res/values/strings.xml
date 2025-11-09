@@ -32,5 +32,6 @@
     </string>
     <string name="title_activity_nested_navigation25">NestedNavigation25Activity</string>
     <string name="title_activity_item_click_lazy_column26">ItemClickLazyColumn26Activity</string>
+    <string name="title_activity_codelabs_main">CodelabsBasicsActivity</string>
 
 </resources>
