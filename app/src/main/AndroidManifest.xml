@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
+            android:name=".codelabs.CodelabBasicLayoutsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_codelab_basic_layouts"
+            android:theme="@style/Theme.SampleCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".codelabs.CodelabsBasicsActivity"
             android:exported="true"
             android:label="@string/title_activity_codelabs_main"
@@ -26,8 +37,7 @@
             android:name=".lazy.ItemClickLazyColumn26Activity"
             android:exported="true"
             android:label="@string/title_activity_item_click_lazy_column26"
-            android:theme="@style/Theme.SampleCompose"/>
-
+            android:theme="@style/Theme.SampleCompose" />
         <activity
             android:name=".nested_navigation.NestedNavigation25Activity"
             android:exported="true"
