@@ -62,4 +62,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // Change the view for different phone and tablet sizes
+    implementation(libs.material3)
+    implementation(libs.material3.windowsize)
+
 }
