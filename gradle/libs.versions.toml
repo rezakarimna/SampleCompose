@@ -14,7 +14,6 @@ activity = "1.8.2"
 nav_version = "2.9.5"
 material3 = "1.2.1"
 
-arcore = "1.0.0-alpha06"   # ✅ تغییر داده شد
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleCompose">
         <activity
+            android:name=".codelabs.state.StateInJetpackComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_state_in_jetpack_compose"
+            android:theme="@style/Theme.SampleCompose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".codelabs.CodelabBasicLayoutsActivity"
             android:exported="true"
             android:label="@string/title_activity_codelab_basic_layouts"
